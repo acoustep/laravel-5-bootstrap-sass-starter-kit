@@ -35,6 +35,8 @@ Run Gulp
 
 ```php artisan migrate```
 
+```php artisan key:generate```
+
 ### Entrust authorization
 
 Edit ```database/seeds/UserTableSeeder.php``` and ```database/seeds/RoleTableSeeder.php``` with initial users.
@@ -44,6 +46,30 @@ php artisan entrust:migration
 php artisan migrate
 php artisan db:seed
 ```
+
+### Getting Started
+
+#### Routes
+
+```app/Http/routes.php```
+
+By default there are routes for home, admin and authentication.
+
+#### SASS
+
+```resources/assets/sass/app.scss```
+```resources/assets/sass/admin/app.scss```
+
+Although not mandatory, see https://mattstauffer.co/blog/organizing-css-oocss-smacss-and-bem and http://horsed.github.io/smacss-with-sass-and-bem-cheat-sheet/ for organising your SASS files.
+
+You can override any bootstrap variable within ```resources/assets/sass/base/_base.scss``` so long as you place it above the bootstrap import.  This is the same for any Jasny Bootstrap changes as well.
+
+#### Javascript
+
+```resources/assets/js/app.js```
+```resources/assets/js/admin/app.js```
+
+Browserify is supported with Laravel Elixir out of the box, so you can use all the EMCA2015 goodies.
 
 ## Features
 
@@ -69,4 +95,5 @@ php artisan db:seed
 
 ## To do
 
-Everything
+* Importing non-sass javascript plugin stylesheets, Chosen, Dropzone etc as a separate command line package.
+* User management GUI for Entrust as a separate package.
