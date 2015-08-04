@@ -103,3 +103,4 @@ Browserify is supported with Laravel Elixir out of the box, so you can use all t
 
 * Importing non-sass javascript plugin stylesheets, Chosen, Dropzone etc as a separate command line package.
 * User management GUI for Entrust as a separate package.
+* Add Modernizr
