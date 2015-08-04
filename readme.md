@@ -37,7 +37,7 @@ Run Gulp
 
 ### Entrust authorization
 
-Edit ```database/seeds/UserTableSeeder.php and ```database/seeds/RoleTableSeeder.php``` with initial users.
+Edit ```database/seeds/UserTableSeeder.php``` and ```database/seeds/RoleTableSeeder.php``` with initial users.
 
 ```
 php artisan entrust:migration
