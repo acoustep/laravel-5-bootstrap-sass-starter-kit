@@ -23,13 +23,12 @@ elixir(function(mix) {
 	mix.sass('**/*', 'public/css/', {includePaths: [paths.bootstrap + 'stylesheets', paths.fontawesome + 'scss']})
 		.copy(paths.bootstrap + 'fonts/bootstrap/**', 'public/fonts/bootstrap')
 		.copy(paths.fontawesome + 'fonts/**', 'public/fonts/fontawesome')
-		.copy(paths.bower + 'chosen/*.png', 'public/images')
 		.copy(paths.bower + 'fancybox/source/*.png', 'public/images')
 		.copy(paths.bower + 'fancybox/source/*.gif', 'public/images')
 		.scripts([
 			paths.jquery + "dist/jquery.js",
 			paths.bootstrap + "javascripts/bootstrap.js",
-			paths.bower + "chosen/chosen.jquery.min.js",
+			paths.bower + "select2/dist/js/select2.js",
 			paths.bower + "fancybox/source/jquery.fancybox.js",
 			paths.bower + "moment/moment.js",
 			paths.bower + "moment-range/lib/moment-range.js",

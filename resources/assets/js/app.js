@@ -1,1 +1,2 @@
-$('.chosen').chosen();
+ $('select').select2();
+
