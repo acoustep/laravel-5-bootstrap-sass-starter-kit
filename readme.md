@@ -51,14 +51,18 @@ php artisan db:seed
 
 #### Routes
 
-```app/Http/routes.php```
+```
+app/Http/routes.php
+```
 
 By default there are routes for home, admin and authentication.
 
 #### SASS
 
-```resources/assets/sass/app.scss```
-```resources/assets/sass/admin/app.scss```
+```
+resources/assets/sass/app.scss
+resources/assets/sass/admin/app.scss
+```
 
 Although not mandatory, see https://mattstauffer.co/blog/organizing-css-oocss-smacss-and-bem and http://horsed.github.io/smacss-with-sass-and-bem-cheat-sheet/ for organising your SASS files.
 
@@ -66,8 +70,10 @@ You can override any bootstrap variable within ```resources/assets/sass/base/_ba
 
 #### Javascript
 
-```resources/assets/js/app.js```
-```resources/assets/js/admin/app.js```
+```
+resources/assets/js/app.js
+resources/assets/js/admin/app.js
+```
 
 Browserify is supported with Laravel Elixir out of the box, so you can use all the EMCA2015 goodies.
 
