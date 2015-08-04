@@ -15,7 +15,8 @@ var paths = {
 	'jquery': './vendor/bower_components/jquery/',
 	'bootstrap': './vendor/bower_components/bootstrap-sass-official/assets/',
 	'fontawesome': './vendor/bower_components/fontawesome/',
-	'dropzone': './vendor/bower_components/dropzone/dist/'
+	'dropzone': './vendor/bower_components/dropzone/dist/',
+	'jasny': './vendor/bower_components/jasny-bootstrap/dist/'
 }
 
 elixir(function(mix) {
@@ -35,13 +36,16 @@ elixir(function(mix) {
 			paths.bower + "jcrop/js/jquery.Jcrop.js",
 			paths.bower + "slick-carousel/slick/slick.js",
 			paths.dropzone + "dropzone.js",
+			paths.jasny + "js/jasny-bootstrap.js",
 		], 'public/js/vendor.js', './')
 		.browserify('app.js', './public/js/app.js')
+		.browserify('admin/app.js', './public/js/admin/app.js')
 		.version([
 			'css/app.css',
 			'css/admin/app.css',
 			'js/vendor.js',
-			'js/app.js'
+			'js/app.js',
+			'js/admin/app.js'
 		])
 });
 

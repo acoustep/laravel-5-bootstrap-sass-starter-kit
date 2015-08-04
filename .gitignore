@@ -2,3 +2,4 @@
 /node_modules
 Homestead.yaml
 .env
+/database/migrations/2015_08_04_105529_entrust_setup_tables.php

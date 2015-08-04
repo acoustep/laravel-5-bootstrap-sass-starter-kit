@@ -1,21 +1,2 @@
-$icon-font-path: "/fonts/bootstrap/";
-$fa-font-path:   "/fonts/fontawesome";
-/* 
- * Overwrite Bootstrap defaults here
- * See http://getbootstrap.com/customize/ for a list of variables
- */
-$navbar-inverse-bg: #f4645f;
-$navbar-inverse-link-color: #fff;
-$brand-primary: #f4645f;
-@import "bootstrap";
-@import "font-awesome";
-@import "../../../vendor/bower_components/slick-carousel/slick/slick";
-// @import "chosen";
-// @import "dropzone";
-// @import "fancybox";
-// @import "jcrop";
+@import "base/base";
 @import "modules/sign-in";
-
-body {
-	margin-top: 60px;
-}

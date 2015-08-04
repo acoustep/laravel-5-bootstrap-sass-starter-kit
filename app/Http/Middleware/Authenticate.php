@@ -4,9 +4,12 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
+use Entrust;
 
 class Authenticate
 {
+		protected $redirectTo = '/admin';
+	
     /**
      * The Guard implementation.
      *
@@ -34,14 +37,13 @@ class Authenticate
      */
     public function handle($request, Closure $next)
     {
-        if ($this->auth->guest()) {
-            if ($request->ajax()) {
-                return response('Unauthorized.', 401);
-            } else {
-                return redirect()->guest('auth/login');
-            }
-        }
-
-        return $next($request);
+			if (! Entrust::hasRole('Mod') && ! Entrust::hasRole('Admin')) {
+				if ($request->ajax()) {
+						return response('Unauthorized.', 401);
+				} else {
+						return redirect()->guest('auth/login');
+				}
+			}
+			return $next($request);
     }
 }

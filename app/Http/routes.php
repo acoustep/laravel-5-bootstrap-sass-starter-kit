@@ -19,6 +19,13 @@ Route::get('auth/logout', ['as' => 'sessions.destroy', 'uses' => 'Auth\AuthContr
 // Registration routes...
 // Route::get('auth/register', 'Auth\AuthController@getRegister');
 // Route::post('auth/register', 'Auth\AuthController@postRegister');
+// 
+Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'namespace' => 'Admin'], function() {
+	Route::get('/', function () {
+    return view('admin.index');
+	});
+
+});
 
 Route::get('/', function () {
     return view('welcome');
