@@ -1,0 +1,15 @@
+{
+  "name": "Laravel 5 Bootstrap Sass Starter Kit",
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.5",
+    "fontawesome": "~4.4.0",
+    "chosen": "~1.4.2",
+    "fancybox": "~2.1.5",
+    "moment": "~2.10.2",
+    "moment-range": "~1.0.7",
+    "jcrop": "~0.9.12",
+    "dropzone": "~4.0.1",
+    "slick-carousel": "~1.5.5"
+  },
+  "devDependencies": {}
+}

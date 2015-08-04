@@ -1,0 +1,8 @@
+$icon-font-path: "/fonts/bootstrap/";
+$fa-font-path:   "/fonts/fontawesome";
+/* 
+ * Overwrite Bootstrap defaults here
+ * See http://getbootstrap.com/customize/ for a list of variables
+ */
+@import "bootstrap";
+@import "font-awesome";

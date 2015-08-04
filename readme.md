@@ -7,6 +7,19 @@ A starter kit which aims to take the pain out of setting up Bootstrap SASS and a
 
 ## Installation
 
+```composer create ...```
+
+Install node modules
+
+```npm install```
+
+Install bower modules
+
+```bower install```
+
+Run Gulp
+
+```gulp watch```
 
 ## Features
 
