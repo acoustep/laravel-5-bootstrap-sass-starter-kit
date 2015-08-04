@@ -145,6 +145,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+				Zizaco\Entrust\EntrustServiceProvider::class,
+				Barryvdh\Debugbar\ServiceProvider::class,
+
+
     ],
 
     /*
@@ -194,6 +198,11 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
 				'Form'      => Illuminate\Html\FormFacade::class,
 				'Html'      => Illuminate\Html\HtmlFacade::class,
+
+				'Debugbar'	=> Barryvdh\Debugbar\Facade::class,
+				'Entrust'		=> Zizaco\Entrust\EntrustFacade::class,
+				
+				
 
     ],
 
