@@ -148,7 +148,7 @@ return [
 				Zizaco\Entrust\EntrustServiceProvider::class,
 				Barryvdh\Debugbar\ServiceProvider::class,
 				Prettus\Repository\Providers\RepositoryServiceProvider::class,
-
+				App\Providers\RepositoryServiceProvider::class,
 
     ],
 
