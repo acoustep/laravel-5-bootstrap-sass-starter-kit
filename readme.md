@@ -33,17 +33,21 @@ Run Gulp
 
 ```mv .env.example .env```
 
+```php artisan key:generate```
+
 ```php artisan migrate```
 
-```php artisan key:generate```
 
 ### Entrust authorization
 
-Edit ```database/seeds/UserTableSeeder.php``` and ```database/seeds/RoleTableSeeder.php``` with initial users.
 
 ```
 php artisan entrust:migration
 php artisan migrate
+```
+Edit ```database/seeds/UserTableSeeder.php``` and ```database/seeds/RoleTableSeeder.php``` with initial users.
+
+```
 php artisan db:seed
 ```
 
@@ -92,8 +96,9 @@ Browserify is supported with Laravel Elixir out of the box, so you can use all t
 	* Bootstrap SASS
 	* Jasny Bootstrap SASS
 	* Font Awesome SASS
-	* Chosen
-	* Fancybox
+	* Select2
+	* Swipebox
+	* Sortable
 	* Moment and Moment Range
 	* JCrop
 	* Dropzone
@@ -101,6 +106,8 @@ Browserify is supported with Laravel Elixir out of the box, so you can use all t
 
 ## To do
 
-* Importing non-sass javascript plugin stylesheets, Chosen, Dropzone etc as a separate command line package.
+* Importing non-sass javascript plugin stylesheets, Dropzone etc as a separate command line package.
 * User management GUI for Entrust as a separate package.
 * Add Modernizr
+* Add Swipebox and Sortable
+* Find the best WYSIWYG editor in the world
