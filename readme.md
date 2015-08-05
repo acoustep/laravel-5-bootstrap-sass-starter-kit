@@ -51,7 +51,7 @@ Edit ```database/seeds/UserTableSeeder.php``` and ```database/seeds/RoleTableSee
 php artisan db:seed
 ```
 
-### Getting Started
+## Getting Started
 
 #### Routes
 
