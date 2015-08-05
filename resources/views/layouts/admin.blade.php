@@ -10,6 +10,7 @@
 
 				<div class="row">
 					<div class="col-xs-12"><h1>@yield('heading')</h1></div>
+					<div class="col-xs-12">@include('layouts.partials.notifications')</div>
 					<div class="col-xs-12">
 						@yield('content')
 					</div>

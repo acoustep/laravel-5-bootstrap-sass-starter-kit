@@ -7,6 +7,7 @@
     <body>
 			@include('layouts.partials.navbar')
 			<div class="container">
+				<div class="col-xs-12">@include('layouts.partials.notifications')</div>
 				@yield('content')
 			</div>
 			<script type="text/javascript" src="{{ elixir('js/vendor.js') }}"></script>
