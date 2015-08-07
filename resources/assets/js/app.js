@@ -1,2 +1,4 @@
- $('select').select2();
-
+(function($) {
+	$('select').select2();
+	$('.swipebox, .fancybox').swipebox();
+})(jQuery);
