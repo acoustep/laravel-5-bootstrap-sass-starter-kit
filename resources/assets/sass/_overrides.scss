@@ -1,0 +1,9 @@
+$icon-font-path: "/fonts/bootstrap/";
+$fa-font-path:   "/fonts/fontawesome";
+/* 
+ * Overwrite Bootstrap defaults here
+ * See http://getbootstrap.com/customize/ for a list of variables
+ */
+$brand-primary: $navigation-background-color;
+$navbar-inverse-bg: $navigation-background-color;
+$navbar-inverse-link-color: $navigation-text-color;
