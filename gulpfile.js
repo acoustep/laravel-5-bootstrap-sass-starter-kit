@@ -17,7 +17,8 @@ var paths = {
 	'fontawesome': './vendor/bower_components/fontawesome/',
 	'dropzone': './vendor/bower_components/dropzone/dist/',
 	'jasny': './vendor/bower_components/jasny-bootstrap/dist/',
-	'swipebox': './vendor/bower_components/swipebox/src/'
+	'swipebox': './vendor/bower_components/swipebox/src/',
+	'sortable': './vendor/bower_components/Sortable/'
 }
 
 elixir(function(mix) {
@@ -36,6 +37,8 @@ elixir(function(mix) {
 			paths.bower + "slick-carousel/slick/slick.js",
 			paths.dropzone + "dropzone.js",
 			paths.jasny + "js/jasny-bootstrap.js",
+			paths.sortable + "Sortable.js",
+			paths.sortable + "jquery.binding.js",
 			paths.swipebox + "js/jquery.swipebox.js",
 		], 'public/js/vendor.js', './')
 		// .browserify('admin/app.js', './public/js/admin/app.js')
