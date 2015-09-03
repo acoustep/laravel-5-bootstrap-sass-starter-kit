@@ -14,17 +14,17 @@ class RoleTableSeeder extends Seeder
 			// TestDummy::times(20)->create('App\Post');
 			DB::table('roles')->insert([
 				[
-					'name' => 'Admin',
+					'name' => 'admin',
 					'display_name' => 'Administrator',
 					'description' => 'Administrative user'
 				],
 				[
-					'name' => 'Mod',
+					'name' => 'mod',
 					'display_name' => 'Moderator',
 					'description' => 'Moderator'
 				],
 				[
-					'name' => 'User',
+					'name' => 'user',
 					'display_name' => 'User',
 					'description' => 'User'
 				],
