@@ -4,7 +4,6 @@
 	
 	// Sortable
 		$('.sortable').sortable({
-			// handle: ".btn",
 			ghostClass: "sortable-ghost",
 			onUpdate: function (evt/**Event*/){
 				var data;

@@ -1,4 +1,5 @@
 var elixir = require('laravel-elixir');
+require('laravel-elixir-eslint');
 
 /*
  |--------------------------------------------------------------------------
@@ -41,13 +42,12 @@ elixir(function(mix) {
 			paths.sortable + "jquery.binding.js",
 			paths.swipebox + "js/jquery.swipebox.js",
 		], 'public/js/vendor.js', './')
-		// .browserify('admin/app.js', './public/js/admin/app.js')
+		.eslint(['resources/assets/js/*.js'])
 		.browserify('app.js', './public/js/app.js')
 		.version([
 			'css/app.css',
 			'css/admin/app.css',
 			'js/vendor.js',
-			// 'js/admin/app.js',
 			'js/app.js',
 		])
 });
