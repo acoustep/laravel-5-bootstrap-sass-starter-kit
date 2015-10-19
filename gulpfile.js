@@ -23,7 +23,8 @@ var paths = {
 }
 
 elixir(function(mix) {
-	mix.sass('**/*', 'public/css/', {includePaths: [paths.bootstrap + 'stylesheets', paths.fontawesome + 'scss']})
+	mix.sass('app.scss', 'public/css/app.css', {includePaths: [paths.bootstrap + 'stylesheets', paths.fontawesome + 'scss']})
+		.sass('admin/app.scss', 'public/css/admin/app.css', {includePaths: [paths.bootstrap + 'stylesheets', paths.fontawesome + 'scss']})
 		.copy(paths.bootstrap + 'fonts/bootstrap/**', 'public/fonts/bootstrap')
 		.copy(paths.fontawesome + 'fonts/**', 'public/fonts/fontawesome')
 		.copy(paths.swipebox + 'img/**', 'public/images')
