@@ -37,7 +37,7 @@ class Authenticate
      */
     public function handle($request, Closure $next)
     {
-			if (! Entrust::hasRole('Mod') && ! Entrust::hasRole('Admin')) {
+			if (! Entrust::hasRole('mod') && ! Entrust::hasRole('admin')) {
 				if ($request->ajax()) {
 						return response('Unauthorized.', 401);
 				} else {

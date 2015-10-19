@@ -35,9 +35,9 @@ class RedirectIfAuthenticated
      */
     public function handle($request, Closure $next)
     {
-			if (Entrust::hasRole('Mod') || Entrust::hasRole('Admin')) {
+			if (Entrust::hasRole('mod') || Entrust::hasRole('admin')) {
         if ($this->auth->check()) {
-            return redirect('/home');
+            return redirect('/admin');
         }
 			}
 			return $next($request);
